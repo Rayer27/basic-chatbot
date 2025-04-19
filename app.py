@@ -3,8 +3,9 @@ import pandas as pd
 import requests
 import plotly.express as px
 import re
+import os
 
-HF_TOKEN = st.secrets["HF_TOKEN"]
+HF_TOKEN = os.environ.get("HF_TOKEN")
 headers = {"Authorization": f"Bearer {HF_TOKEN}"}
 model = "mistralai/Mistral-7B-Instruct-v0.1"
 api_url = f"https://api-inference.huggingface.co/models/{model}"
