@@ -1,0 +1,8 @@
+runtime: python311
+
+entrypoint: streamlit run main.py --server.port $PORT --server.enableCORS false
+
+env_variables:
+  GEMINI_API_KEY: "AIzaSyBOP3-TqISGUvWkFNz9eZDQhuAGQFy8LVA"
+
+
