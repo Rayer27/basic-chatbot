@@ -1,17 +1,9 @@
-# Ignore Python bytecode
-__pycache__
+__pycache__/
 *.pyc
-
-# Ignore virtual environment
-venv
-env
-
-# Ignore git repository files
-.git
-.gitignore
-
-# Ignore .env file for sensitive API keys (if not using GCP secrets)
+*.pyo
+*.pyd
+*.DS_Store
 .env
+.venv/
 
-# Ignore local environment configuration files
-*.local
+
